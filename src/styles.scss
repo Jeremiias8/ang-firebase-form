@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap';
+
+* {
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif
+}
+
+body {
+  margin: 10px auto;
+  padding: 10px;
+
+  h1 {
+    font-size: 16px;
+  }
+}
+
+.active {
+  border-bottom: 1px solid #1976D2;
+}
+
+/* tutorials */
+.container {
+
+}
+
+ul {
+  list-style: none;
+}
+
+.container button, button {
+  margin: 10px;
+}
