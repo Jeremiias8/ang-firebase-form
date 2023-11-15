@@ -5,7 +5,7 @@ import { Juego } from '../models/juego.model';
 @Injectable({
   providedIn: 'root'
 })
-export class JuegoServiceService {
+export class JuegoService {
   private dbPath = '/juegos';
 
   juegosRef: AngularFireList<Juego>;
