@@ -8,14 +8,18 @@ import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TutorialsComponent } from './components/tutorials/tutorials.component';
+import { JuegosComponent } from './components/juegos/juegos.component';
 import { AddComponent } from './components/add/add.component';
+import { ListJuegosComponent } from './components/list-juegos/list-juegos.component';
+import { DetailsJuegosComponent } from './components/details-juegos/details-juegos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TutorialsComponent,
-    AddComponent
+    JuegosComponent,
+    AddComponent,
+    ListJuegosComponent,
+    DetailsJuegosComponent
   ],
   imports: [
     BrowserModule,
