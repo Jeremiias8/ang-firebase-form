@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
+
 import { Juego } from 'src/app/models/juego.model';
 import { JuegoService } from 'src/app/services/juego.service';
 @Component({
@@ -11,7 +15,8 @@ export class AddComponent implements OnInit {
   juego : Juego = new Juego();
   submitted = false;
 
-  constructor(private juegoService: JuegoService) { }
+  constructor(private http: HttpClient,
+    private juegoService: JuegoService) { }
 
   ngOnInit(): void {
   }
